@@ -1,13 +1,12 @@
 const express =require("express");
 const app =express();
 // console.log(app)
-const books=require("./books.json")
-app.get("/books", (req,res)=>{
-    console.log("rahul Libraries");
-    // res.send("Rahul libraries warm welcome to all readers");
-    res.send({ books : books });
+
+app.get("/home", (req,res)=>{
+    console.log("hello");
+    res.send("hello world form rahul");
 })
 
-app.listen(2345,()=>{
-    console.log("listining to port 2345");
+app.listen(4000,()=>{
+    console.log("listining to port 4000");
 })
